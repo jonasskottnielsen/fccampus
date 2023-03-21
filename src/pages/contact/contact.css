@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+}
+.content {
+    padding: 24px;
+}
+
+.contact {
+    width: 50%;
+}

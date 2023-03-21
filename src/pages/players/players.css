@@ -6,6 +6,7 @@
 }
 
 .players__tabs-content {
+  max-width: 600px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
@@ -32,4 +33,15 @@ button {
 .active {
   border-bottom: 2px solid var(--color-footer);
   color: var(--color-footer);
+}
+
+@media (min-width: 600px) {
+  .players__tabs-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .players__tabs-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
